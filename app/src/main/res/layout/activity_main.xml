@@ -102,13 +102,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
         android:padding="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewProfile"
         app:sccAngleStart="-180"
         app:sccAngleSweep="180"
-        app:sccStrokeColors="#EC4949|#EC4949|#F7AD36|#F7AD36|#F7AD36|#F7AD36|#8BBE28"
+        app:sccStrokePosition="middle"
+        app:sccStrokeColors="#2B4BFF|#40FF49|#ffa217|#ff2626"
         app:sccStrokeColorsMode="solid"
         app:sccStrokeWidth="30dp" />
 
@@ -117,12 +120,12 @@
         android:layout_width="181dp"
         android:layout_height="113dp"
         android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="104dp"
         android:src="@drawable/indicator"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gauge"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonCalculate"
