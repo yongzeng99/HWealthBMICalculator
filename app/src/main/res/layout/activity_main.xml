@@ -40,13 +40,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="@string/height"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
 
@@ -95,6 +96,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBMI"
         app:srcCompat="@drawable/bmistandard" />
+
+    <com.sccomponents.gauges.library.ScArcGauge
+        android:id="@+id/gauge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfile"
+        app:sccAngleStart="-180"
+        app:sccAngleSweep="180"
+        app:sccStrokeColors="#EC4949|#EC4949|#F7AD36|#F7AD36|#F7AD36|#F7AD36|#8BBE28"
+        app:sccStrokeColorsMode="solid"
+        app:sccStrokeWidth="30dp" />
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="181dp"
+        android:layout_height="113dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@drawable/indicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gauge"
+        app:layout_constraintVertical_bias="0.103" />
 
     <Button
         android:id="@+id/buttonCalculate"
