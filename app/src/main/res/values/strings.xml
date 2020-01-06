@@ -3,8 +3,11 @@
     <string name="weight">Weight (kg)</string>
     <string name="height">Height (cm)</string>
     <string name="picture">Profile Picture</string>
-    <string name="bmi">Your Category :</string>
+    <string name="bmi">BMI :</string>
+    <string name="textBMI"></string>
+    <string name="category">Your Category :</string>
     <string name="textResult"></string>
+    <string name="textDesiredWeight">Desired Weight:</string>
     <string name="under">Underweight</string>
     <string name="normal">Normal</string>
     <string name="over">Overweight</string>
